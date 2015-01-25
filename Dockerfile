@@ -2,7 +2,8 @@ FROM ranacseruet/php-node
 
 #App setup
 RUN rm -fr /app
-ADD . /app
+RUN rm -fr /app && git clone https://github.com/ranacseruet/dockerized-php.git /app
+ADD docker-files/makefile /app/makefile
 RUN cd /app && make
 ADD docker-files/database.php /app/application/config/database.php
 ADD docker-files/run.sh /run.sh
