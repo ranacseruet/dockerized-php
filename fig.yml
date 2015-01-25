@@ -3,4 +3,10 @@ web:
   build: .
   ports:
    - "80:80"
-   - "3306:3306"
+  links:
+     - db
+db:
+  image: mysql
+  environment:
+      MYSQL_DATABASE: dockerized-test
+      MYSQL_ROOT_PASSWORD: root

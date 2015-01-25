@@ -1,0 +1,1 @@
+{include "modules/message/details.tpl"}

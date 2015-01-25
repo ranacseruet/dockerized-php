@@ -41,10 +41,10 @@
 $active_group = 'default';
 
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'db';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'codeigniterplus';
+$db['default']['password'] = 'root';
+$db['default']['database'] = 'dockerized-test';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
